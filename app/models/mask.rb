@@ -7,4 +7,5 @@ class Mask < ApplicationRecord
   validates :price, presence: true
   validates :location, presence: true
   validates :mood, presence: true
+  mount_uploader :photo, PhotoUploader
 end

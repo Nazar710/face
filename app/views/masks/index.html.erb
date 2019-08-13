@@ -1,0 +1,20 @@
+
+<div class='asdasd'>
+    <h1>All masks you need</h1>
+    <div class='btn btn-warning unshit'>
+        <%= link_to "add a mask, if you need to", new_mask_path  %>
+    </div>
+</div>
+
+<div class="container-flats-index">
+      <% @masks.each do |mask| %>
+       <div class="card-face">
+        <%= link_to mask.name, mask_path(mask)  %>
+        <%= cl_image_tag mask.photo, height: 100, width: 100, crop: :fill %>
+        <%= mask.price %>
+        <%= mask.location %>
+        <%= mask.mood %>
+       </div>
+      <% end %>
+</div>
+
