@@ -1,0 +1,8 @@
+
+
+<%= @review.errors.full_messages.to_sentence %>
+<%= simple_form_for [@mask, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating, placeholder: '1...5'%>
+  <%= f.submit "submit", class: "btn btn-primary" %>
+<% end %>
