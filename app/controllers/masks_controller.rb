@@ -9,6 +9,13 @@ class MasksController < ApplicationController
     @review = Review.new
     @booking = Booking.new
     @mask = Mask.find(params[:id])
+
+    @masks = Mask.geocoded #returns masks with coordinates
+
+    @marker = [{
+        lat: @mask.latitude,
+        lng: @mask.longitude
+      }]
   end
 
   def new
