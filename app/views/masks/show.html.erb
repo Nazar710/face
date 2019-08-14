@@ -1,6 +1,43 @@
-<h1><%= @mask.name  %></h1>
+<div
+  id="map"
+  style="width: 100%;
+  height: 300px;"
+  data-markers="<%= @marker.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+></div>
 
-<%= render "shared/booking", mask: @mask, booking: @booking %>
+<h1 style="text-align: center;"><%= @mask.name  %></h1>
 <br>
 <br>
-<%= render "shared/review", mask: @mask, review: @review %>
+<div class="price-mood">
+  <h2>the mood of this mask is: <em style="color: red"><%= @mask.mood %></em></h2>
+  <h3>the price of this mask is: <em style="color: red"><%= @mask.price %></em> ₿</h3>
+</div>
+<br>
+<br>
+<div class="review-booking-mid-container">
+<div class="reviews-container">
+<ul style="list-style: none"><% @mask.reviews.each do |review| %>
+  <li><%= "⭐"*(review.rating) %> - <%=review.content%> | by <%= review.user.email %></li>
+  <% end %>
+</ul>
+</div>
+
+<div class="booking-container">
+  <ul style="list-style: none"><% @mask.bookings.each do |booking| %>
+  <li> this mask if booked from <%=(booking.startdate) %> to <%=booking.enddate%></li>
+  <% end %>
+  </ul>
+</div>
+</div>
+
+
+<div class="show-review-booking">
+  <div class="show-booking">
+      <%= render "shared/booking", mask: @mask, booking: @booking %>
+  </div>
+  <p style="font-size: 50px; padding-top: 20px;"> <----- Book it  <br><br>  Review it -----> </p>
+  <div class="show-review">
+      <%= render "shared/review", mask: @mask, review: @review %>
+  </div>
+</div>
