@@ -31,3 +31,33 @@
 }
 }
 
+.review-booking-mid-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px 0px;
+}
+
+.reviews-container {
+  position: relative;
+}
+
+.show-review-booking{
+  display:flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  .show-booking {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  .show-review {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+  }
+}
+
+.price-mood {
+  text-align: center;
+}
