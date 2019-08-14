@@ -1,6 +1,5 @@
 .container-flats-index {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   justify-content: space-between;
   padding: 0px 50px 0px 50px;
   margin-top: 25px;
