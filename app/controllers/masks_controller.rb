@@ -6,6 +6,8 @@ class MasksController < ApplicationController
   end
 
   def show
+    @review = Review.new
+    @booking = Booking.new
     @mask = Mask.find(params[:id])
   end
 
