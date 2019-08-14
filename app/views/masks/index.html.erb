@@ -6,15 +6,19 @@
     </div>
 </div>
 
-<div class="container-flats-index">
+<div class="container">
+  <div class="row">
       <% @masks.each do |mask| %>
-       <div class="card-face">
+        <div class="container-flats-index col-sm-12 col-md-6 col-lg-4">
+        <div class="card-face">
         <%= link_to mask.name, mask_path(mask)  %>
         <%= cl_image_tag mask.photo, height: 100, width: 100, crop: :fill %>
         <%= mask.price %>
         <%= mask.location %>
         <%= mask.mood %>
-       </div>
-      <% end %>
+        </div>
+        </div>
+        <% end %>
+  </div>
 </div>
 
