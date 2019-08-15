@@ -1,6 +1,18 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  height: 70px;
+  width: 100%;
+}
+
+.navbar-lewagon-transparent {
+  justify-content: space-between;
+  background: transparent;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +21,16 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-lewagon-transparent .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon-transparent .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-lewagon-transparent .navbar-light .navbar-nav .nav-link  {
+  color: rgba(255,255,255,1);
 }
