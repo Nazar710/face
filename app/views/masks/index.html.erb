@@ -1,24 +1,33 @@
 
 <div class='asdasd'>
-    <h1>All masks you need</h1>
-    <div class='btn btn-warning unshit'>
-        <%= link_to "add a mask, if you need to", new_mask_path  %>
-    </div>
-</div>
 
+    <h1>All masks you need</h1>
+
+    <div class='btn btn-warning unshit'>
+        <%= link_to "add a mask, you need", new_mask_path  %>
+    </div>
+    <div class='btn btn-warning unshit'> Search</div>
+
+</div>
 <div class="container">
   <div class="row">
-      <% @masks.each do |mask| %>
-        <div class="container-flats-index col-sm-12 col-md-6 col-lg-4">
-        <div class="card-face">
-        <%= link_to mask.name, mask_path(mask)  %>
-        <%= cl_image_tag mask.photo, height: 100, width: 100, crop: :fill %>
-        <%= mask.price %>
-        <%= mask.location %>
-        <%= mask.mood %>
-        </div>
-        </div>
-        <% end %>
+    <% @masks.each do |mask| %>
+      <div class="col-4 d-flex justify-content-center align-items-center">
+          <figure class="snip1527">
+            <div class="image">
+              <%= cl_image_tag mask.photo %>
+              <div class="date"><span class="day"><%= mask.price %></span><span class="month">DKK</span></div>
+            </div>
+
+            <%= link_to mask_path(mask) do %>
+              <figcaption>
+                <h3><%= mask.name %></h3>
+                <p><%= mask.location %></p>
+                <p><%= mask.mood %></p>
+              </figcaption>
+            <% end %>
+          </figure>
+      </div>
+    <% end %>
   </div>
 </div>
-

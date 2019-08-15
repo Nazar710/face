@@ -1,0 +1,25 @@
+.text-center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.getFace {
+  font-family: $headers-font;
+  font-size: 36px;
+  width: 300px;
+  background-color: $light-yellow;
+  color: $blue;
+  padding: 12px 10px;
+  box-shadow: 2px 2px 3px $pink;
+  transition: .3s;
+  border: black;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.getFace:hover {
+background-color: black;
+
+}

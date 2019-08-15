@@ -1,7 +1,40 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  height: 70px;
+  width: 100%;
 }
+
+.navbar-lewagon-transparent {
+  justify-content: space-between;
+  background: transparent;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+
+.nav-link {
+  background: black;
+  font-family: $headers-font;
+  font-size: 18px;
+  margin-right: 16px;
+  color: $dark-yellow !important;
+  transition: 0.3s ease all;
+  width: 150px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  font-size: 36px;
+
+  box-shadow: 2px 2px 3px $pink;
+  color: $light-yellow !important;
+}
+
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
@@ -9,4 +42,16 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-lewagon-transparent .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon-transparent .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-lewagon-transparent .navbar-light .navbar-nav  {
+  color: rgba(255,255,255,1);
 }

@@ -1,0 +1,18 @@
+
+.nav-link {
+  background: black;
+  font-family: $headers-font;
+  font-size: 18px;
+  margin-right: 16px;
+  color: $dark-yellow !important;
+  transition: 0.3s ease all;
+  width: 150px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  font-size: 36px;
+
+  box-shadow: 2px 2px 3px $pink;
+  color: $light-yellow !important;
+}
