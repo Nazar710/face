@@ -9,6 +9,8 @@
 <h1 style="text-align: center;"><%= @mask.name  %></h1>
 <br>
 <br>
+
+
 <div class="price-mood">
   <h2>the mood of this mask is: <em style="color: red"><%= @mask.mood %></em></h2>
   <h3>the price of this mask is: <em style="color: red"><%= @mask.price %></em> ₿</h3>
@@ -41,3 +43,4 @@
       <%= render "shared/review", mask: @mask, review: @review %>
   </div>
 </div>
+
