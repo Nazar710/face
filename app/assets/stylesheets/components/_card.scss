@@ -48,16 +48,39 @@
   margin-top: 40px;
   .show-booking {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 25px;
   }
   .show-review {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 25px;
   }
 }
 
 .price-mood {
   text-align: center;
+}
+
+.faggot {
+}
+
+.inner-info{
+  padding-top: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.inner-map {
+  border: 5px solid;
+  border-radius: 25px;
+  width: 1000px;
+  margin: 10px 60px;
+
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+
 }

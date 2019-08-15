@@ -1,6 +1,16 @@
-<% @review.errors.full_messages.to_sentence %>
-<%= simple_form_for [@mask, @review] do |f| %>
-  <%= f.input :content %>
-  <%= f.input :rating, placeholder: '1...5'%>
-  <%= f.submit "submit", class: "btn btn-primary" %>
+<% if current_user.reviews.map(&:mask).include?(@mask) %>
+  <p>Hentai titties</p>
+<% else %>
+  <% @review.errors.full_messages.to_sentence %>
+  <%= simple_form_for [@mask, @review] do |f| %>
+    <%= f.input :content %>
+    <br>
+    <div class="kys">
+    <%= f.collection_radio_buttons :rating, [[1, 'Shit'], [2, 'Bad'], [3, 'OK'], [4, 'Great'], [5, 'Boobs']], :first, :last, { item_wrapper_tag: false } do |b|
+        b.radio_button+b.label(:class => "collection_radio_buttons icon-star")
+    end %>
+    </div>
+  <br><br>
+    <%= f.submit "submit", class: "btn btn-primary" %>
+    <% end %>
 <% end %>
