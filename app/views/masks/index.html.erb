@@ -1,33 +1,27 @@
+<div class="dark-background">
+  <div class="pt-5 d-flex justify-content-center">
+      <h1 class="index-title">All masks you need</h1>
+  </div>
+  <div class="indexpage-wrapper">
+    <div class="row">
+      <% @masks.each do |mask| %>
+        <div class="col-4 d-flex justify-content-center align-items-center mb-5">
+            <figure class="snip1527">
+              <div class="image">
+                <%= cl_image_tag mask.photo %>
+                <div class="date"><span class="day"><%= mask.price %></span><span class="month">DKK</span></div>
+              </div>
 
-<div class='asdasd'>
-
-    <h1>All masks you need</h1>
-
-    <div class='btn btn-warning unshit'>
-        <%= link_to "add a mask, you need", new_mask_path  %>
+              <%= link_to mask_path(mask) do %>
+                <figcaption>
+                  <h3><%= mask.name %></h3>
+                  <p><%= mask.location %></p>
+                  <p><%= mask.mood %></p>
+                </figcaption>
+              <% end %>
+            </figure>
+        </div>
+      <% end %>
     </div>
-    <div class='btn btn-warning unshit'> Search</div>
-
-</div>
-<div class="container">
-  <div class="row">
-    <% @masks.each do |mask| %>
-      <div class="col-4 d-flex justify-content-center align-items-center">
-          <figure class="snip1527">
-            <div class="image">
-              <%= cl_image_tag mask.photo %>
-              <div class="date"><span class="day"><%= mask.price %></span><span class="month">DKK</span></div>
-            </div>
-
-            <%= link_to mask_path(mask) do %>
-              <figcaption>
-                <h3><%= mask.name %></h3>
-                <p><%= mask.location %></p>
-                <p><%= mask.mood %></p>
-              </figcaption>
-            <% end %>
-          </figure>
-      </div>
-    <% end %>
   </div>
 </div>

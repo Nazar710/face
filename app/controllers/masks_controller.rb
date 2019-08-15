@@ -3,6 +3,7 @@ class MasksController < ApplicationController
 
   def index
     @masks = Mask.all
+    render layout: "home"
   end
 
   def show
