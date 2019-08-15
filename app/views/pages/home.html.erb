@@ -1,23 +1,9 @@
-<div class="container">
-  <div class='row'>
-    <h1>Get a mask, let anybody like you!</h1>
-    <%= cl_image_tag("rjudhnjy3td2xmi2s548.png", width: 1000, height: 200, crop: :fill, secure: true) %>
-  </div>
-  <div class='row'>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1551215536-a01ce2fb0d3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80);">
+  <div class="text-center d-flex justify-content-center align-items-center flex-column">
+    <h1 class="banner-content ">Get a face! Make your life easier!</h1>
+    <br>
+    <h2 class="banner-content small-content">Don't express yourself, and everybody is gonna love you!</h2>
+    <%= link_to "GET A FACE", masks_path, class: "btn btn-flat"  %>
 
-    <div class="container">
-        <div class="row">
-          <% @masks[0..2].each do |mask| %>
-              <div class="container-flats-index col-sm-12 col-md-6 col-lg-4">
-              <div class="card-face">
-              <%= link_to mask.name, mask_path(mask)  %>
-              <%= cl_image_tag mask.photo, height: 100, width: 100, crop: :fill %>
-
-              <%= mask.mood %>
-              </div>
-              </div>
-              <% end %>
-        </div>
-    </div>
   </div>
 </div>
