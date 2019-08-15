@@ -5,7 +5,8 @@
 }
 
 .getFace {
-
+  font-family: $headers-font;
+  font-size: 36px;
   width: 300px;
   background-color: $light-yellow;
   color: $blue;
@@ -14,9 +15,11 @@
   transition: .3s;
   border: black;
   text-align: center;
+  text-decoration: none;
 
 }
 
 .getFace:hover {
 background-color: black;
+
 }
