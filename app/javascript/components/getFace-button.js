@@ -1,5 +1,3 @@
-//you also may use it on mouseup,it's all up to you,Muhammadkhairy
-function searchButton() {
 $(function() {
   $('button')
     .on('mouseenter, mouseout', function(e) {
@@ -9,6 +7,5 @@ $(function() {
       $(this).find('span').css({top:dY, left:dX});
     });
 });
-}
 
-export { searchButton };
+export { button }

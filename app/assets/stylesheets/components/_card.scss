@@ -1,45 +1,19 @@
-.container-flats-index {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 50px 0px 50px;
-  margin-top: 25px;
-  div {
-    grid-row-start: 1;
-    font-weight: bold;
-    color: #49beb7;
-    text-align: center;
-    list-style: none;
-    margin-top: 50px;
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    border-color: red;
-    border-radius: 15px;
-    border: 8px solid;
-  }
-
-.card-face {
-  margin: auto;
-  border-color: red;
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  h2 {
-    margin-top: 30px;
-  }
-}
-}
-
-.review-booking-mid-container {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  padding: 20px 0px;
-}
-
-.reviews-container {
+.snip1527 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  float: left;
+  font-family: 'Bangers', Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px 1%;
+  max-width: 310px;
+  min-width: 310px;
+  height: 465px;
+  overflow: hidden;
   position: relative;
+  text-align: left;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
 
 .show-review-booking{
@@ -56,10 +30,113 @@
     border-radius: 25px;
     padding: 25px;
   }
+.snip1527 a .image {
+  position: relative;
 }
 
-.price-mood {
+.snip1527 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1527 img {
+  width: 310px;
+  height: 310px;
+  vertical-align: top;
+  position: relative;
+}
+
+.snip1527 figcaption {
+  padding: 25px 20px 25px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.snip1527 figcaption:before {
+  color: $blue;
+  width: 310px;
+  min-height: 161px;
+  max-height: 161px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background: linear-gradient(to right, #ffd615, #ffb710, #ff9820, #ff7832, #ff5742, #ff4849, #ff3651, #ff1f5a, #ff1f5a, #ff1f5a, #ff1f5a, #ff1f5a);
+  opacity: 1;
+  z-index: -100;
+}
+
+.snip1527 .date {
+  background-color: #fff;
+  border-radius: 50%;
+  color: $blue;
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 10px 0;
+  position: absolute;
+  right: 15px;
   text-align: center;
+  text-transform: uppercase;
+  bottom: 140px;
+  z-index: 100;
+}
+
+.snip1527 .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.snip1527 .date .month {
+  font-size: 11px;
+}
+
+.snip1527 h3,
+.snip1527 p {
+  margin: 0;
+  padding: 0;
+}
+
+.snip1527 h3 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.snip1527 p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+
+.snip1527 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.snip1527:hover img,
+.snip1527.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.snip1527 a figcaption h3 {
+  color: $blue;
+}
+
+.snip1527 a figcaption p {
+  color: white;
 }
 
 .faggot {
