@@ -5,5 +5,8 @@ class PagesController < ApplicationController
     @masks = Mask.all
   end
 
+  def test
+  end
+
 
 end
