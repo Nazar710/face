@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-    skip_before_action :authenticate_user!, only: :home
+  skip_before_action :authenticate_user!, only: :home
 
   def home
     @masks = Mask.all
@@ -9,5 +9,7 @@ class PagesController < ApplicationController
   def test
   end
 
-
+  def show
+    render layout: "home"
+  end
 end
