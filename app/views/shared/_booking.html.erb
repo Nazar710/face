@@ -3,8 +3,8 @@
 <% else  %>
     <%= @booking.errors.full_messages.to_sentence %>
     <%= simple_form_for [@mask, @booking] do |f| %>
-    <%= f.input :startdate, as: :date, html5: true %>
-    <%= f.input :enddate, as: :date, html5: true %>
-    <%= f.submit "submit", class: "btn btn-primary" %>
+    <%= f.input :startdate, as: :date, html5: true, wrapper_html: {class: 'custom-form-control'}, label_html: {class: 'custom-form-control-label'}, input_html: { class: "custom-form-control-input"} %>
+    <%= f.input :enddate, as: :date, html5: true, wrapper_html: {class: 'custom-form-control'}, label_html: {class: 'custom-form-control-label'}, input_html: { class: "custom-form-control-input"} %>
+    <%= f.submit "submit", class: "nav-link" %>
     <% end %>
 <% end %>
