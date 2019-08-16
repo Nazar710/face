@@ -1,14 +1,78 @@
-.show-booking {
-  background-color: red;
+.main-show-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.photo-and-infos-card {
+  width: 600px;
+  height: 350px;
+  border-radius: 25px;
+  border: 5px solid;
+  padding: auto;
   text-align: center;
-  padding-bottom: -5px;
+  padding-top: 100px;
+}
+
+.inner-info {
+      width: 600px;
+      height: 210px;
+      border-radius: 25px;
+      border: 5px solid;
+    }
+
+.book-and-map{
+  margin-top: -38px;
+}
+
+
+
+.show-booking {
+  text-align: center;
   margin-bottom: 25px;
+  width: 500px;
+  height:350px;
+  border-radius: 25px;
+  border: 5px solid;
 }
 
 
 .show-review {
-  background-color: red;
+  padding: 15px;
+  height: 350px;
+  background-color: white;
+  border-radius: 20px;
   text-align: center;
   padding-bottom: -5px;
   margin-bottom: 25px;
+  border: 5px solid;
+}
+
+.kys {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+.collection_radio_buttons.icon-star{
+      margin-left: -23px;
+      margin-top: 5px;
+}
+
+
+.reviews-container {
+  border: 5px solid;
+  height: 210px;
+  border-radius: 25px;
+
+}
+
+
+.booking-container {
+  border: 5px solid;
+  height: 210px;
+  border-radius: 25px;
+
 }
