@@ -152,13 +152,19 @@
 .inner-map {
   border: 5px solid;
   border-radius: 25px;
-  width: 1000px;
-  margin: 10px 60px;
-
+  width: 53.8%;
+  margin: 10px 100px;
 }
 
 .map-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  .arrow {
+    width: 200px;
+    height: 200px;
+    background-image: asset-url("arrow.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 
 }
