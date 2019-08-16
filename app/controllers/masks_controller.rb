@@ -17,6 +17,7 @@ class MasksController < ApplicationController
         lat: @mask.latitude,
         lng: @mask.longitude
       }]
+    render layout: "home"
   end
 
   def new

@@ -1,9 +1,11 @@
+<div class="dark-background">
+  <div class="pt-5 d-flex justify-content-center">
+    <h1 class="index-title"><%= @mask.name %></h1>
+  </div>
+  <br>
+  <br>
 
-<h1 style="text-align: center; margin-top: 50px;"><%= @mask.name  %></h1>
-<br>
-<br>
-
-<div class="main-show-container">
+  <div class="main-show-container">
 
   <div class="faggot">
     <div class="photo-and-infos-card">
@@ -40,7 +42,7 @@
 
   <div>
     <div class="show-review" style="width: 400px">
-        <h2 style='font-family: $headers-font;'>Book your shit</h2>
+       <h2 style='font-family: $headers-font;'>Book your shit</h2>
         <%= render "shared/review", mask: @mask, review: @review %>
     </div>
 
@@ -54,13 +56,15 @@
   </div>
 </div>
 
-<div class="map-wrapper">
-  <div class=arrow></div>
-    <div class="inner-map">
-      <div id="map" style="width: 100%; height: 200px; border-radius: 20px;"
-        data-markers="<%= @marker.to_json %>"
-        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-          >
-      </div>
+    <div class="map-wrapper">
+      <div class=arrow></div>
+        <div class="inner-map">
+          <div id="map" style="width: 100%; height: 200px; border-radius: 20px;"
+            data-markers="<%= @marker.to_json %>"
+            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+              >
+          </div>
+        </div>
     </div>
 </div>
+
